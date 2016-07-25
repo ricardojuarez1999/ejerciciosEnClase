@@ -1,6 +1,14 @@
 import ahorcado
-n = ""
-palabra = str(ahorcado.palabra_r(n))
-for i in len(palabra):
-	print("_")
-print (n)
+palabra = str(ahorcado.palabra_r())
+turnos = 0
+guiones = []
+for i in range(len(palabra)):
+	guiones += "_"
+while turnos != 7:
+	gui = ""
+	for i in range(len(palabra)):
+		gui += (guiones[i]+" ")
+	print (gui)
+	print (palabra)
+	letra = input("Ingrese una letra: ")
+	print (ahorcado.com(palabra,letra))

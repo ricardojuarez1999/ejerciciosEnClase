@@ -1,5 +1,5 @@
 import random
-def palabra_r(hola):
+def palabra_r():
   palabras = [
     "de",
     "la",
@@ -1003,3 +1003,10 @@ def palabra_r(hola):
     "afrodiciaco"
   ]
   return random.choice(palabras)
+
+def com(a,b):
+    a = list(a)
+    if b in a:
+        return True
+    else:
+        return False
