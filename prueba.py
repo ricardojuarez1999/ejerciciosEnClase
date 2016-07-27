@@ -6,6 +6,7 @@ for i in range(len(palabra)):
 	guiones += "_"
 while turnos != 7:
 	gui = ""
+	letras2 = 0
 	for i in range(len(palabra)):
 		gui += (guiones[i]+" ")
 	print (gui)
@@ -14,5 +15,7 @@ while turnos != 7:
 		if letra == palabra[i]:
 			guiones[i] = letra
 		else:
-			turnos +1
-print ("has perdido lol ")
+			letras2 += 1
+	if letras2 == len(guiones):
+		turnos += 1
+		print (ahorcado.suicida(turnos-1))
