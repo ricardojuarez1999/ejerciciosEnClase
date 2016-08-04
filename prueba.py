@@ -23,6 +23,6 @@ while turnos != 7:
 		turnos += 1
 		print (ahorcado.suicida(turnos-1))
 	if ganar == len(palabra):
-		print ("\nusted ha ganado")
+		print ("\nusted ha ganado") 
 		turnos = 7
 print ("la palabra correcta era", palabra)
